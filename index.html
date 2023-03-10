@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PrintAnywhere</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container mt-5">
+		<div class="row justify-content-center">
+			<div class="col-md-8">
+				<h1 class="text-center">PrintAnywhere</h1>
+				<p class="lead text-center">Print your files from anywhere!</p>
+				<div class="card">
+					<div class="card-body">
+						<form>
+							<div class="form-group">
+								<label for="fileToPrint">File to be printed:</label>
+								<div class="input-group">
+									<div class="custom-file">
+										<input type="file" class="custom-file-input" id="fileToPrint">
+										<label class="custom-file-label" for="fileToPrint">Choose file</label>
+									</div>
+									<div class="input-group-append">
+										<button class="btn btn-outline-secondary" type="button">
+											<i class="fas fa-upload"></i> Upload
+										</button>
+									</div>
+								</div>
+							</div>
+						</form>
+						<div class="mt-3">
+							<!-- Placeholder for map, can be replaced with an actual map implementation -->
+							<div id="map" style="width:100%;height:400px;"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
